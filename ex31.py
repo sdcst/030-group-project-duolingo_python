@@ -5,4 +5,8 @@ def salutation():
     print("Hello! from file 1")
 
 
-x = 10
+
+
+def AreaOfSquare():
+x = input("Enter the Width of your Square")
+y = input("Enter the length of your Square")
