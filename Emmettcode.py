@@ -46,4 +46,7 @@ def SurfaceAreaOfAIcosahedron():
         V = round(V,2)
         print(f"The volume of your icosahedron is : {V}")
 
-        SurfaceAreaOfAIcosahedron()
+HypotenuseOfATriangle()
+        
+
+        

@@ -7,6 +7,4 @@ def salutation():
 
 
 
-def AreaOfSquare():
-x = input("Enter the Width of your Square")
-y = input("Enter the length of your Square")
+
