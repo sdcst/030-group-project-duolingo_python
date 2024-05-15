@@ -5,4 +5,6 @@ def salutation():
     print("Hello! from file 1")
 
 
-x = 10
+
+
+
