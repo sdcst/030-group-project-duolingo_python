@@ -4,6 +4,11 @@
 
 
 def title():
+    print("   ______      __           __      __            ")
+    print("  / ____/___ _/ /______  __/ /___ _/ /_____  _____")
+    print(" / /   / __ `/ / ___/ / / / / __ `/ __/ __ \/ ___/")
+    print("/ /___/ /_/ / / /__/ /_/ / / /_/ / /_/ /_/ / /    ")
+    print("\____/\__,_/_/\___/\__,_/_/\__,_/\__/\____/_/     ")
     # Will display a title screen
     # input parameters: none needed
     # output parameters: None
@@ -33,5 +38,6 @@ def main():
         # keep giving options to choose menu options until they choose to exit
         pass
 
-if __name__ == "__main__":
-    main()
+#if __name__ == "__main__":
+#    main()
+title()
