@@ -19,7 +19,6 @@ def SurfaceAreaOfACone():
         A = (3.14159*r*(r + (r**2 + h**2)**0.5))
         A = round(A,2)
         print(f"The surface area of your cone is : {A}")
-
 def HypotenuseOfATriangle(): 
     A = int(input("Enter the A value of Your triangle: "))
     B = int(input("Enter the B value of Your triangle: "))
@@ -31,24 +30,39 @@ def HypotenuseOfATriangle():
         C =((A**2 + B**2)**0.5)
         C = round(C,2)
         print(f"The hypotenuse of your triangel is: {C}")
-
+def EdgeOfAIcosahedronUsingVolume(): 
+    e = int(input("Enter the Surface area of your icosahedron: "))
+    if e < 0 :
+        print ("Enter in a valid povtitve number: ")
+    elif e > 0:
+        E =(((9*e/5)-(3*(5**0.5)*e/5))**(1/3))
+        E = round(E,2)
+        print(f"The Edge of your icosahedron is : {E}")      
+def EdgeOfAIcosahedronUsingSurfaceArea(): 
+    e = int(input("Enter the Surface area of your icosahedron: "))
+    if e < 0 :
+        print ("Enter in a valid povtitve number: ")
+    elif e > 0:
+        E =((3**0.75)*((e/45)**0.5))
+        E = round(E,2)
+        print(f"The Edge of your icosahedron is : {E}")
 def SurfaceAreaOfAIcosahedron():
     e = int(input("Enter the Edge lengeth of your icosahedron: "))
     if e < 0 :
         print ("Enter in a valid povtitve number: ")
-    PAIN = int(input("Would you like the Sufacearea or the Volume of your icosahedron? If you want the volume please enter the number 2. If you want the Surfacearea please enter the number 1: "))
-    if PAIN != 1 or PAIN != 2 :
-        print ("Enter in a valid number")
-    elif e > 0 and PAIN == 1:
+    elif e > 0:
         SA =(5*(3**0.5)*(e**2))
         SA = round(SA,2)
         print(f"The surface area of your icosahedron is : {SA}")
-    elif e > 0 and PAIN == 2:
+def VolumeOfAIcosahedron():
+    e = int(input("Enter the Edge lengeth of your icosahedron: "))
+    if e < 0 :
+        print ("Enter in a valid povtitve number: ")
+    elif e > 0:
         V =(5*(3+(5**0.5))/12)*(e**3)
         V = round(V,2)
         print(f"The volume of your icosahedron is : {V}")
-
-def SimplieIntest():
+def SimplieInterst():
     P = int(input("Enter the principal amount of Your simple interst: "))
     R = float(input("Enter the rate of interest per Year as a percentence of Your simple interst: "))
     T = int(input("Enter the Time Period involved in months of Your simple interst: "))
@@ -64,8 +78,15 @@ def SimplieIntest():
         A = (P * (1 + r*T))
         A = round(A,2)
         print(f"Your simple intest is : {A}")
+def AreaOfAdodecagon():
+    e = int(input("the length of the side of the dodecagon: "))
+    if e < 0 :
+        print ("Enter in a valid povtitve number: ")
+    elif e > 0:
+        V =(3*(2+3**0.5)*(e**2))
+        V = round(V,2)
+        print(f"The volume of your icosahedron is : {V}")
 
 
 
-
-SurfaceAreaOfAIcosahedron()
+AreaOfAdodecagon()
