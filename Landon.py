@@ -78,7 +78,7 @@ def Com_Int():
     n = float(input("Enter number of times interest applied per period: "))
     t = float(input("Enter number of time periods elapsed: "))
     A = P*(1 + (r/n))**(n*t)
-    round(A,2)
+    A = round(A,2)
     print(A)
 #assert multidim(1,"Square",4) == 1
 #assert multidim(1,"Circle",4) == 4.93
