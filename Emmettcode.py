@@ -79,14 +79,24 @@ def SimplieInterst():
         A = round(A,2)
         print(f"Your simple intest is : {A}")
 def AreaOfAdodecagon():
-    e = int(input("the length of the side of the dodecagon: "))
+    e = int(input("Enter the length of the side of the dodecagon: "))
     if e < 0 :
         print ("Enter in a valid povtitve number: ")
     elif e > 0:
         V =(3*(2+3**0.5)*(e**2))
         V = round(V,2)
         print(f"The volume of your icosahedron is : {V}")
+def VolumeOfAdodecagon():
+    s = int(input("Enter the length of the side of the dodecagon: "))
+    h = int(input("Enter the Height of the column of the dodecagon: "))
+    if s < 0 :
+        print ("Enter in a valid povtitve number: ")
+    if h < 0 :
+        print ("Enter in a valid povtitve number: ")
+    elif s > 0 and h > 0: 
+        V = ((5/2)*(s**2)*(((5+2*(5**0.5))**0.5)*h))
+        V = round(V,2)
+        print(f"The volume of your icosahedron is : {V}")
 
 
-
-AreaOfAdodecagon()
+VolumeOfAdodecagon()
