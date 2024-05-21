@@ -78,15 +78,15 @@ def SimplieInterst():
         A = (P * (1 + r*T))
         A = round(A,2)
         print(f"Your simple intest is : {A}")
-def AreaOfAdodecagon():
+def AreaOfAdecagon():
     e = int(input("Enter the length of the side of the dodecagon: "))
     if e < 0 :
         print ("Enter in a valid povtitve number: ")
     elif e > 0:
         V =(3*(2+3**0.5)*(e**2))
         V = round(V,2)
-        print(f"The volume of your icosahedron is : {V}")
-def VolumeOfAdodecagon():
+        print(f"The area of your decagon is : {V}")
+def VolumeOfAdecagon():
     s = int(input("Enter the length of the side of the dodecagon: "))
     h = int(input("Enter the Height of the column of the dodecagon: "))
     if s < 0 :
@@ -96,7 +96,22 @@ def VolumeOfAdodecagon():
     elif s > 0 and h > 0: 
         V = ((5/2)*(s**2)*(((5+2*(5**0.5))**0.5)*h))
         V = round(V,2)
-        print(f"The volume of your icosahedron is : {V}")
+        print(f"The volume of your decagon is : {V}")
+def AlienCivilizationCalculator():
+    R = 7
+    fp = 0.35
+    n = 2.5
+    f1 = 0.515
+    f2 = 10**-24
+    f3 = 0.15
+    L = int(input("Enter somewhere between 1000 and 100,000,000 years in which you want to know how many Alien Civilizations may form: "))
+    if L < 1000:
+        print ("Enter in a valid number between 1000 and 100,000,000: ")
+    if L > 100000000:
+        print ("Enter in a valid number between 1000 and 100,000,000: ")
+    elif L > 1000 and L < 100000000: 
+        V = (R*fp*n*f1*f2*f3*L)
+        V = round(V,2)
+        print(f"The volume of your decagon is : {V}")
 
-
-VolumeOfAdodecagon()
+AlienCivilizationCalculator()
