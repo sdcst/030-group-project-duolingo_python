@@ -7,7 +7,7 @@
 def Multidim():
     length = float(input("Enter length/radius: "))
     Type = input("Enter a type (Circle or Square): ")
-    dimensions = int(input("Enter the number of dimensions (Max 4): "))
+    dimensions = int(input("Enter the number of dimensions (Max 4 for Circle): "))
     if Type == "Square":
         V = length**dimensions
     elif Type == "Circle":
@@ -32,7 +32,7 @@ def Factor():
         factor = "No solution"
     elif (b**2 - 4*a*c) == 0:
         ans = (-1*b)/2*a
-        ans = round
+        ans = round(ans,2)
         if ans >= 0:
             factor = f"(x - {ans})^2"
         elif ans < 0:
@@ -58,7 +58,7 @@ def APQ():
     p = b/(-2*a)
     q = c - (a*(p**2))
     if a == 1:
-        a = None
+        a = ""
     elif a == -1:
         a == "-"
     if p >= 0:
@@ -86,8 +86,7 @@ def Com_Int():
 #assert APQ(1,1,1) == "(x + 2)^2 - 3"
 #assert Com_Int() ==  
 
-Com_Int()
-
+Multidim()
 
 
 
