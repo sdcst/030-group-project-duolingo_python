@@ -36,28 +36,42 @@ def instructions():
 
 
 def main():
-    import Landon 
-    import Emmettcode.py
-
     """
     main block of code that will run your program and control program flow
     You will need to include a while loop to keep repeating the commands until
     the user chooses to exit
     """
-    title()
     Continue = True
-    while Continue == True:
+    while Continue != False:
         x = input("Input: ")
-        if x = 1:
+        if x == "1":
             Landon.Com_Int()
-        if x = 2:
-            Emmettcode.
-        if x = 3:
-            Landon.Com_Int()
-        if x = 4:
-            Landon.Com_Int()
-        if x = 5:
-            Landon.Com_Int()
+        if x == "2":
+            Emmettcode.SimplieInterst()
+        if x == "3":
+            Landon.Factor()
+        if x == "4":
+            Landon.APQ()
+        if x == "5":
+            Landon.Multidim()
+        if x == "6":
+            Emmettcode.EdgeOfAIcosahedronUsingVolume()
+        if x == "7":
+            Emmettcode.EdgeOfAIcosahedronUsingSurfaceArea()
+        if x == "8":
+            Emmettcode.SurfaceAreaOfAIcosahedron()
+        if x == "9":
+            Emmettcode.VolumeOfAIcosahedron()
+        if x == "10":
+            Emmettcode.SurfaceAreaOfACone()
+        if x == "11":
+            Emmettcode.HypotenuseOfATriangle()
+        if x == "12":
+            Emmettcode.AreaOfAdecagon()
+        if x == "13":
+            Emmettcode.AlienCivilizationCalculator()
+        if x == "":
+            break  
 
 
     print("Thankyou for using: ")
@@ -71,3 +85,4 @@ def main():
 #    main()
 title()
 instructions()
+main()

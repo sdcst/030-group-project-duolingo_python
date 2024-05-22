@@ -22,7 +22,7 @@ def Multidim():
         elif dimensions == 4:
             V = 0.5*(3.14159**2)*length**4
     V = round(V,2)
-    print(V)
+    print(f"{V}m^{dimensions}")
 
 def Factor():
     a = float(input("Enter 'a' value: "))
@@ -85,8 +85,6 @@ def Com_Int():
 #assert factor(1,-5,6) == "(x-3)(x+2)"
 #assert APQ(1,1,1) == "(x + 2)^2 - 3"
 #assert Com_Int() ==  
-
-Multidim()
 
 
 

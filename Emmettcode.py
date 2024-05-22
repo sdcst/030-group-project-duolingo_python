@@ -111,5 +111,3 @@ def AlienCivilizationCalculator():
         A = (R*fp*n*f1*f2*f3*L)
         A = round(A,25)
         print(f"The amount of alien Civilizations that could have formed is aproximently: {A}")
-
-AlienCivilizationCalculator()
