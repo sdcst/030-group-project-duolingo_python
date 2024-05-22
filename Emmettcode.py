@@ -104,14 +104,12 @@ def AlienCivilizationCalculator():
     f1 = 0.515
     f2 = 10**-24
     f3 = 0.15
-    L = int(input("Enter somewhere between 1000 and 100,000,000 years in which you want to know how many Alien Civilizations may form: "))
-    if L < 1000:
-        print ("Enter in a valid number between 1000 and 100,000,000: ")
-    if L > 100000000:
-        print ("Enter in a valid number between 1000 and 100,000,000: ")
-    elif L > 1000 and L < 100000000: 
-        V = (R*fp*n*f1*f2*f3*L)
-        V = round(V,2)
-        print(f"The volume of your decagon is : {V}")
+    L = int(input("Enter the number of years in which you want to know how many Alien Civilizations formed: "))
+    if L < 0:
+        print ("Enter in a valid number: ")
+    elif L > 0: 
+        A = (R*fp*n*f1*f2*f3*L)
+        A = round(A,25)
+        print(f"The amount of alien Civilizations that could have formed is aproximently: {A}")
 
 AlienCivilizationCalculator()
